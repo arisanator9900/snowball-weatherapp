@@ -4,15 +4,14 @@
 //display it in card format flex with css
 //display large format card + 6 smaller daily forecast cards for the future
 import React from 'react'
-import { useState } from 'react'
 
-const Hero = () => {
-    useState('')
+const Hero = ({Location}) => {
   return (
     <div>
         {/*<img> hero image banner*/}
         <h1>Snowball Weather</h1>
         <h2>Enter Your Location To See The Weather For Your Area</h2>
+        <h1>{Location} Weather</h1>
     </div>
   )
 }

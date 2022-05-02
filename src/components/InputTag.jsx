@@ -1,18 +1,16 @@
 //input field
-import React, { useState } from 'react'
+import React, { useCallback } from 'react'
+import App from '../App'
 
 
-const InputTag = () => {
-    const [Location, setLocation] = useState('London')
-
-    const newLocation = (e) => {
-        setLocation(e.target.value)
-    }
+const InputTag = ({Location, onLocationChange}) => {
+    const setLocation = useCallback(e => {
+        onLocationChange(e.target.value)
+    }, [onLocationChange])
         
   return (
      <div>
-     <h1>{Location} Weather</h1>
-    <input type='text' value={Location} onChange={newLocation} />
+    <input type='text' value={Location} onChange={setLocation} />
     </div> 
   )
 }

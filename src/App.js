@@ -2,24 +2,17 @@ import './App.css';
 import InputTag from './components/InputTag';
 import Hero from './components/Hero.jsx'
 import React from 'react';
-class App extends React.Component{
-      
-       state = {
-        name: "",
-       }
-  
-    handleCallback = (childData) =>{
-        this.setState({name: childData})
-    }
+import { useState } from 'react';
 
-  render() {
-    return (
-      <div className="App">
-        <Hero />
-        <InputTag />
-      </div>
-    );
-  }
+const App = () => {
+  const [Location, setLocation] = useState('London')
+
+  return (
+    <div className="App">
+      <Hero Location={Location}/>
+      <InputTag Location={Location} onLocationChange={setLocation} />
+    </div>
+  );
 }
 
 export default App;
