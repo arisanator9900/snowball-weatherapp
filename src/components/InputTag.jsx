@@ -1,6 +1,5 @@
 //input field
 import React, { useCallback } from 'react'
-import App from '../App'
 
 
 const InputTag = ({Location, onLocationChange}) => {
