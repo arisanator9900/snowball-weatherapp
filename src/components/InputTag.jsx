@@ -1,12 +1,19 @@
 //input field
-import React from 'react'
+import React, { useState } from 'react'
+
 
 const InputTag = () => {
-    const getInputValue = () => {
+    const [Location, setLocation] = useState('London')
+
+    const newLocation = (e) => {
+        setLocation(e.target.value)
+    }
         
-    };
   return (
-    <input type='text' onChange={getInputValue} />
+     <div>
+     <h1>{Location} Weather</h1>
+    <input type='text' value={Location} onChange={newLocation} />
+    </div> 
   )
 }
 
