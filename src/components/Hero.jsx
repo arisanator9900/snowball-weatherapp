@@ -3,6 +3,7 @@
 //to change the location to the user choice using my API key 
 //display it in card format flex with css
 //display large format card + 6 smaller daily forecast cards for the future
+//add function to add - in text space (ex New york = New-York)
 import React from 'react'
 
 const Hero = ({Location}) => {

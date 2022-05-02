@@ -9,6 +9,7 @@ const InputTag = ({Location, onLocationChange}) => {
         
   return (
      <div>
+    <p>Enter City Name or Zipcode</p>
     <input type='text' value={Location} onChange={setLocation} />
     </div> 
   )
