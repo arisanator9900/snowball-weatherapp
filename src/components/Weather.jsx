@@ -12,6 +12,11 @@ const Weather = ({Location}) => {
     //only call when user presses button to get weather 
     let locationName = {Location}.Location
     locationName = locationName.replace(' ', '-')
+    //on page load get the inital weather for default area using react hook
+    //added line below to stop compiler from giving warning for empty array
+    // eslint-disable-next-line
+    React.useEffect(() => getWeather(), [])
+
     const getWeather = () => {
         fetch('http://api.weatherapi.com/v1/current.json?key=d7c8dbc661c344ed9cb122953220205&q='+ locationName +'&aqi=no')
         .then(response => {return response.json()})
@@ -30,13 +35,12 @@ const Weather = ({Location}) => {
 
   return (
     <div className='wrapper'>
-    <p>{temperature}, {feelsLike}, {condition}, <img src={icon} alt=''/>,  {rain}</p>
         <div className="button">
             <button className='weather-btn' onClick={getWeather}>Get Weather</button>
         </div>
         <div className="card-wrapper">
             <div className="bigcard">
-
+            <p>{temperature}, {feelsLike}, {condition}, <img src={icon} alt=''/>,  {rain}</p>
             </div>
             <div className="cards">
                 <div id="card1"></div>

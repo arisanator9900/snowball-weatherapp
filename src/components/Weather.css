@@ -1,0 +1,12 @@
+
+.weather-btn {
+    margin-top: 0;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: 	#f0ffff;
+}
+
+.weather-btn:hover {
+    background-color: #fff;
+}

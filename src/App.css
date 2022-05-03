@@ -12,4 +12,5 @@
   box-shadow: 3px 3px;
   border: 1px solid #aaa;
   background-image: url('./img/wbackground.jpg');
+  border-radius: 15px;
 }
