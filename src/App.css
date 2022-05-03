@@ -2,4 +2,14 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.main-wrapper {
+  margin: auto;
+  width: 50%;
+  box-shadow: 3px 3px;
+  border: 1px solid #aaa;
+  background-image: url('./img/wbackground.jpg');
 }

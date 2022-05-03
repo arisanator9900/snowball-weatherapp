@@ -10,9 +10,11 @@ const App = () => {
 
   return (
     <div className="App">
+      <div className='main-wrapper'>
       <Hero Location={Location}/>
       <InputTag Location={Location} onLocationChange={setLocation} />
       <Weather Location={Location}/>
+      </div>
     </div>
   );
 }

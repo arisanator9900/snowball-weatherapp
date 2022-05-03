@@ -5,14 +5,16 @@
 //display large format card + 6 smaller daily forecast cards for the future
 //add function to add - in text space (ex New york = New-York)
 import React from 'react'
+import './Hero.css'
 
 const Hero = ({Location}) => {
   return (
-    <div>
+    <div className='page-wrapper'>
         {/*<img> hero image banner*/}
-        <h1>Snowball Weather</h1>
-        <h2>Enter Your Location To See The Weather For Your Area</h2>
-        <h1>{Location} Weather</h1>
+        <h1 className='page-header'>Snowball Weather App</h1>
+        <h2>{Location} Weather</h2>
+        <h3>Enter Your Location To See The Weather For Your Area</h3>
+        
     </div>
   )
 }

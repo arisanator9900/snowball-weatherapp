@@ -1,5 +1,6 @@
 //input field
 import React, { useCallback } from 'react'
+import './InputTag.css'
 
 
 const InputTag = ({Location, onLocationChange}) => {
@@ -9,8 +10,8 @@ const InputTag = ({Location, onLocationChange}) => {
         
   return (
      <div>
-    <p>Enter City Name or Zipcode</p>
-    <input type='text' value={Location} onChange={setLocation} />
+    <p className='text'>Enter City Name or Zipcode</p>
+    <input className='form' type='text' value={Location} onChange={setLocation} />
     </div> 
   )
 }
