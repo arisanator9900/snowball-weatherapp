@@ -10,3 +10,14 @@
 .weather-btn:hover {
     background-color: #fff;
 }
+
+.big-card {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    background-color: #f0ffff;
+    box-shadow: 2px 2px #aaa;
+}

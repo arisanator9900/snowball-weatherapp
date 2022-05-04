@@ -39,8 +39,12 @@ const Weather = ({Location}) => {
             <button className='weather-btn' onClick={getWeather}>Get Weather</button>
         </div>
         <div className="card-wrapper">
-            <div className="bigcard">
-            <p>{temperature}, {feelsLike}, {condition}, <img src={icon} alt=''/>,  {rain}</p>
+            <div className="big-card">
+                <h3>Current Temp: {temperature}{'\u00B0'}</h3>
+                <p>Feels Like: {feelsLike}{'\u00B0'}</p>
+                <h3>{condition}</h3>
+                <img src={icon} alt=''/>
+                <p>Precipitation: {rain} Inches</p>
             </div>
             <div className="cards">
                 <div id="card1"></div>
