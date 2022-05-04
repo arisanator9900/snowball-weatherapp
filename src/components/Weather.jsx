@@ -18,7 +18,7 @@ const Weather = ({Location}) => {
     React.useEffect(() => getWeather(), [])
 
     const getWeather = () => {
-        fetch('http://api.weatherapi.com/v1/current.json?key=d7c8dbc661c344ed9cb122953220205&q='+ locationName +'&aqi=no')
+        fetch('https://api.weatherapi.com/v1/current.json?key=d7c8dbc661c344ed9cb122953220205&q='+ locationName +'&aqi=no')
         .then(response => {return response.json()})
         .then(data => {setWeather(data)})
         console.log(currentWeather)
